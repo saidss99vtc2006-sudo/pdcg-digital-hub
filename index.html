@@ -1,307 +1,589 @@
 <!DOCTYPE html>
-<!-- saved from url=(0056)https://01a20bf3-c753-791b-a975-9ee392c70108.arena.site/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDCG Digital Hub – Al Buraimi Hospital | مستشفى البريمي</title>
-    <link rel="icon" href="https://01a20bf3-c753-791b-a975-9ee392c70108.arena.site/favicon-light.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
-    <link rel="icon" href="https://01a20bf3-c753-791b-a975-9ee392c70108.arena.site/favicon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://01a20bf3-c753-791b-a975-9ee392c70108.arena.site/">
-    <meta property="og:title" content="PDCG Digital Hub – Al Buraimi Hospital | مستشفى البريمي">
-    <meta property="og:description" content="Check out what I built in Arena&#39;s Code Arena - Content is user-generated and unverified">
-    <meta property="og:image" content="https://screenshot-taker-prod.weichiang.workers.dev/message/01a20bf3-c753-791b-a975-9ee392c70108/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://01a20bf3-c753-791b-a975-9ee392c70108.arena.site/">
-    <meta property="twitter:title" content="PDCG Digital Hub – Al Buraimi Hospital | مستشفى البريمي">
-    <meta property="twitter:description" content="Check out what I built in Arena&#39;s Code Arena - Content is user-generated and unverified">
-    <meta property="twitter:image" content="https://screenshot-taker-prod.weichiang.workers.dev/message/01a20bf3-c753-791b-a975-9ee392c70108/og-image.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./PDCG Digital Hub – Al Buraimi Hospital _ مستشفى البريمي_files/css2" rel="stylesheet">
-    <script type="text/javascript" async="" src="./PDCG Digital Hub – Al Buraimi Hospital _ مستشفى البريمي_files/array.js.download"></script><script>
-      const REPORT_SURVEY_ID = "019a46ef-f7dd-0000-58be-14fbb8b91d15";
-      const MESSAGE_ID = "01a20bf3-c753-791b-a975-9ee392c70108";
-      const EVALUATION_SESSION_ID = "01a1d115-a70f-7d41-93df-53a1cd2c5193";
-      const getStorageKey = (prefix) => `${prefix}_${MESSAGE_ID}`;
-      const hasStorageKey = (prefix) => !!localStorage.getItem(getStorageKey(prefix));
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDCG Digital Hub – Al Buraimi Hospital | مستشفى البريمي</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Tajawal', sans-serif; background-color: #f1f5f9; color: #0f172a; }
+    h1, h2, h3, h4, h5 { font-family: 'Cairo', 'Tajawal', sans-serif; }
+    .hero-box { background: linear-gradient(135deg, #0f172a 0%, #13233f 55%, #0b2e2a 100%); color: #fff; border-radius: 0 0 28px 28px; }
+    .card-custom { background: #fff; border: 1px solid #e2e8f0; border-radius: 20px; box-shadow: 0 10px 25px -10px rgba(15, 23, 42, 0.08); }
+    .lbl { display: block; font-size: 0.82rem; font-weight: 800; color: #1e293b; margin-bottom: 0.35rem; }
+    .form-control-custom { border-radius: 12px; border: 1.5px solid #cbd5e1; padding: 10px 14px; font-weight: 600; }
+    .form-control-custom:focus { border-color: #10b981; box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.14); }
+    .nav-pill-custom { border-radius: 999px; font-weight: 800; padding: 9px 18px; border: 2px solid #e2e8f0; background: #fff; color: #334155; cursor: pointer; transition: 0.2s; font-size: 0.85rem; }
+    .nav-pill-custom.active { background: #0f172a; color: #fff; border-color: #0f172a; }
+    .date-chip { display: inline-flex; align-items: center; gap: 6px; background: #0f172a; color: #fff; padding: 5px 12px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; margin: 3px; }
+  </style>
+</head>
+<body>
 
-      // snippet below comes from posthog's documentation for running in html pages
-      // prettier-ignore
-      !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+<div class="hero-box p-4 mb-4 shadow">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+      <span class="badge bg-white/10 border border-white/25 px-3 py-2 rounded-pill">قسم التطوير والتوجيه المهني / مستشفى البريمي</span>
+      <span id="connBadge" class="badge bg-warning text-dark px-3 py-2 rounded-pill">جاري التحقق من الاتصال...</span>
+    </div>
+    <h2 class="fw-black mb-2">منصة التطوير والتوجيه المهني الرقمية <span style="color:#6ee7b7">(PDCG Digital Hub)</span></h2>
+    <p class="mb-0 text-light opacity-75 small">مستشفى البريمي | وزارة الصحة، سلطنة عُمان — رؤية عُمان 2040</p>
+  </div>
+</div>
 
-      const POSTHOG_API_KEY = "phc_LG7IJbVJqBsk584rbcKca0D5lV2vHguiijDrVji7yDM";
-      if (POSTHOG_API_KEY) {
-        posthog.init(POSTHOG_API_KEY, {
-          api_host: "/ph",
-          ui_host: "https://us.posthog.com",
-          person_profiles: "identified_only",
-          autocapture: false,
-          disable_session_recording: true,
-          before_send: (event) => {
-            if (event.event === "survey sent") {
-              // On the first survey answer sent, also send the report event
-              if (!hasStorageKey("code_reported")) {
-                localStorage.setItem(getStorageKey("code_reported"), "true");
-                posthog.capture?.("code_preview_banner_report");
-              }
-              // When the survey is completed, hide the report button
-              if (event.properties?.$survey_completed === true) {
-                localStorage.setItem(getStorageKey("survey_completed"), "true");
-                document.querySelector(".report-content-btn").style.display = "none";
-              }
-            }
-            return event;
-          },
-        });
-        posthog.register({ message_id: MESSAGE_ID, evaluation_session_id: EVALUATION_SESSION_ID });
-      }
-    </script>
-    <style>
-      * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<div class="container pb-5">
+  <!-- الشاشة الرئيسية قبل الدخول -->
+  <div id="landingView">
+    <div class="row g-4">
+      <!-- 1. بوابة الكوادر والموظفين -->
+      <div class="col-lg-4">
+        <div class="card-custom overflow-hidden h-100">
+          <div class="p-4 text-white" style="background:#0f172a">
+            <h5 class="fw-bold mb-1"><i class="fa-solid fa-user-doctor text-success me-2"></i> بوابة الكوادر الصحية</h5>
+            <small class="opacity-75">تفرز الفئات الخمس تلقائياً (مستشفى البريمي، المحافظة، السلطنة، القطاعات الأخرى، الخاص)</small>
+          </div>
+          <div class="p-4">
+            <div class="mb-3">
+              <label class="lbl">الرقم الوظيفي / المدني / الترخيص</label>
+              <input type="text" id="jobIdInput" class="form-control form-control-custom text-center fw-bold" placeholder="مثال: 37801">
+            </div>
+            <div class="mb-3">
+              <label class="lbl">كلمة المرور</label>
+              <input type="password" id="passwordInput" class="form-control form-control-custom text-center" placeholder="••••••••">
+            </div>
+            <button id="loginBtn" class="btn btn-dark w-100 rounded-pill fw-bold py-2.5 mb-3" onclick="handleLogin()">
+              <i class="fa-solid fa-right-to-bracket me-1"></i> تسجيل الدخول
+            </button>
+            <div id="loginAlert" class="alert alert-danger py-2 small d-none"></div>
+            <hr>
+            <button class="btn btn-outline-success w-100 rounded-pill fw-bold" data-bs-toggle="collapse" data-bs-target="#registerCollapse">
+              <i class="fa-solid fa-user-plus me-1"></i> تسجيل موظف جديد
+            </button>
+            <div id="registerCollapse" class="collapse mt-3">
+              <div class="p-3 bg-light rounded-3 border">
+                <div class="mb-2"><label class="lbl">الرقم الوظيفي *</label><input type="text" id="regJobId" class="form-control form-control-custom"></div>
+                <div class="mb-2"><label class="lbl">الاسم بالعربي *</label><input type="text" id="regNameAr" class="form-control form-control-custom"></div>
+                <div class="mb-2"><label class="lbl">الاسم بالإنجليزي *</label><input type="text" id="regNameEn" class="form-control form-control-custom"></div>
+                <div class="mb-2">
+                  <label class="lbl">جهة العمل *</label>
+                  <select id="regWorkplace" class="form-select form-control-custom">
+                    <option value="abh">1. موظفو مستشفى البريمي</option>
+                    <option value="dghs">2. موظفو الصحة – محافظة البريمي (خارج المستشفى)</option>
+                    <option value="moh_nat">3. موظفو الصحة من جميع محافظات السلطنة</option>
+                    <option value="gov">4. موظفو الحكومة من القطاعات الأخرى</option>
+                    <option value="private">5. موظفو القطاع الصحي الخاص</option>
+                  </select>
+                </div>
+                <div class="mb-2"><label class="lbl">القسم *</label><input type="text" id="regDept" class="form-control form-control-custom" placeholder="مثال: الباطنية / الطوارئ"></div>
+                <div class="mb-2"><label class="lbl">الهاتف (عُماني) *</label><input type="text" id="regPhone" class="form-control form-control-custom" placeholder="9XXXXXXX"></div>
+                <div class="mb-2"><label class="lbl">البريد الإلكتروني *</label><input type="email" id="regEmail" class="form-control form-control-custom"></div>
+                <div class="mb-3"><label class="lbl">كلمة المرور (8 أحرف + كبير + صغير + رقم + رمز) *</label><input type="password" id="regPass" class="form-control form-control-custom" placeholder="Buraimi@2026"></div>
+                <button class="btn btn-success w-100 rounded-pill fw-bold" onclick="handleRegister()">إرسال التسجيل</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-a {
-  text-decoration: none;
-}
+      <!-- 2. بوابة المتدربين والطلبة -->
+      <div class="col-lg-4">
+        <div class="card-custom overflow-hidden h-100">
+          <div class="p-4 text-white" style="background:#059669">
+            <h5 class="fw-bold mb-1"><i class="fa-solid fa-graduation-cap me-2"></i> بوابة المتدربين والطلبة</h5>
+            <small class="opacity-90">تقديم مباشر بالرقم المدني بدون كلمة مرور (3 مسارات)</small>
+          </div>
+          <div class="p-4">
+            <div class="mb-3">
+              <label class="lbl">اختر مسار التدريب *</label>
+              <select id="trTrack" class="form-select form-control-custom">
+                <option value="t1">1. التدريب الميداني للطلبة والخريجين</option>
+                <option value="t2">2. برنامج الالتحاق الإكلينيكي (Clinical Attachment)</option>
+                <option value="t3">3. برنامج المراقبة الإكلينيكية (Observership)</option>
+              </select>
+            </div>
+            <div class="mb-2"><label class="lbl">الاسم الكامل *</label><input type="text" id="trName" class="form-control form-control-custom"></div>
+            <div class="row g-2 mb-2">
+              <div class="col-6"><label class="lbl">الرقم المدني *</label><input type="text" id="trCivil" class="form-control form-control-custom"></div>
+              <div class="col-6">
+                <label class="lbl">الجنسية *</label>
+                <select id="trNat" class="form-select form-control-custom"><option value="omani">عُماني</option><option value="non">غير عُماني</option></select>
+              </div>
+            </div>
+            <div class="mb-2"><label class="lbl">المؤسسة التعليمية *</label><input type="text" id="trInst" class="form-control form-control-custom" placeholder="جامعة السلطان قابوس / جامعة البريمي"></div>
+            <div class="row g-2 mb-2">
+              <div class="col-6"><label class="lbl">التخصص *</label><input type="text" id="trSpec" class="form-control form-control-custom" placeholder="التمريض / الطب"></div>
+              <div class="col-6"><label class="lbl">القسم المطلوب *</label><input type="text" id="trDept" class="form-control form-control-custom" placeholder="الباطنية"></div>
+            </div>
+            <div class="row g-2 mb-2">
+              <div class="col-6"><label class="lbl">تاريخ البداية *</label><input type="date" id="trStart" class="form-control form-control-custom"></div>
+              <div class="col-6"><label class="lbl">تاريخ النهاية *</label><input type="date" id="trEnd" class="form-control form-control-custom"></div>
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-6"><label class="lbl">الهاتف *</label><input type="text" id="trPhone" class="form-control form-control-custom" placeholder="9XXXXXXX"></div>
+              <div class="col-6"><label class="lbl">البريد الإلكتروني *</label><input type="email" id="trEmail" class="form-control form-control-custom"></div>
+            </div>
+            <button class="btn btn-success w-100 rounded-pill fw-bold py-2.5" onclick="submitTraineeApp()">
+              <i class="fa-solid fa-paper-plane me-1"></i> إرسال الطلب والحصول على رمز التتبع
+            </button>
+            <div id="trAlert" class="mt-3 d-none"></div>
+          </div>
+        </div>
+      </div>
 
-html,
-body {
-  height: 100%;
-  overflow: hidden;
-}
+      <!-- 3. متابعة الطلبات والفعاليات -->
+      <div class="col-lg-4">
+        <div class="card-custom overflow-hidden h-100">
+          <div class="p-4 text-white" style="background:#2563eb">
+            <h5 class="fw-bold mb-1"><i class="fa-solid fa-magnifying-glass-location me-2"></i> متابعة الطلبات والفعاليات</h5>
+            <small class="opacity-90">استعلام المتدربين بالرمز + الرقم المدني واستعراض الفعاليات</small>
+          </div>
+          <div class="p-4">
+            <h6 class="fw-bold text-dark mb-2">استعلام حالة طلب متدرب</h6>
+            <div class="mb-2"><label class="lbl">رمز التتبع (Tracking Code)</label><input type="text" id="trackCodeInput" class="form-control form-control-custom fw-bold" placeholder="ABH-TRN-2026-XXXX"></div>
+            <div class="mb-3"><label class="lbl">الرقم المدني (Civil ID)</label><input type="text" id="trackCivilInput" class="form-control form-control-custom" placeholder="الرقم المدني"></div>
+            <button class="btn btn-primary w-100 rounded-pill fw-bold mb-3" onclick="handleTrack()">
+              <i class="fa-solid fa-search me-1"></i> استعلام عن الحالة
+            </button>
+            <div id="trackResult" class="mb-3 d-none"></div>
+            <hr>
+            <h6 class="fw-bold text-dark mb-2"><i class="fa-solid fa-calendar-star text-success me-1"></i> الفعاليات المعتمدة القادمة</h6>
+            <div id="publicEventsList" class="small text-muted">جاري تحميل الفعاليات...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-body {
-  font-family:
-    "Inter",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    Roboto,
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
-  display: flex;
-  flex-direction: column;
-  background: #f5f5f5;
-}
-
-/* Banner styles */
-.floating-banner {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  z-index: 1000;
-  animation: slideIn 0.3s ease-out;
-  display: flex;
-  align-items: center;
-  will-change: transform, opacity;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateY(100px) translateZ(0);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0) translateZ(0);
-    opacity: 1;
-  }
-}
-
-.floating-banner.dismissed {
-  animation: slideOut 0.3s ease-out forwards;
-}
-
-@keyframes slideOut {
-  to {
-    transform: translateY(100px) translateZ(0);
-    opacity: 0;
-  }
-}
-
-.banner-padding {
-  padding: 10px 16px;
-}
-
-.banner-link-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.banner-logo {
-  display: flex;
-  align-items: center;
-  color: #2d2d2d;
-  flex-shrink: 0;
-}
-
-.banner-logo svg {
-  height: 28px;
-  width: auto;
-}
-
-.banner-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.banner-text {
-  margin: 0;
-  white-space: nowrap;
-}
-
-.banner-upper-text {
-  color: #151617;
-  font-size: 14px;
-}
-
-.banner-lower-text {
-  color: #878c9f;
-  font-size: 10px;
-}
-
-.banner-action-container {
-  border-left: 1px solid rgba(45, 47, 53, 0.08);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-}
-
-.action-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
-  border: none;
-  color: #999;
-  cursor: pointer;
-  transition: color 0.2s;
-  flex-shrink: 0;
-}
-
-.action-btn:hover {
-  color: #2d2d2d;
-}
-
-/* Iframe container styles */
-.iframe-container {
-  flex: 1;
-  position: relative;
-  background: white;
-  overflow: hidden;
-  min-height: 0;
-}
-
-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block;
-}
-
-    </style>
-  </head>
-  <body data-ryu-obtrusive-scrollbars="false">
-    <svg style="display: none">
-      <symbol id="icon-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
-      </symbol>
-      <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M18 6 6 18"></path>
-        <path d="m6 6 12 12"></path>
-      </symbol>
-    </svg>
-
-    
-
-    <div class="iframe-container">
-      <iframe id="preview-iframe" src="./PDCG Digital Hub – Al Buraimi Hospital _ مستشفى البريمي_files/saved_resource.html" sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-popups allow-popups-to-escape-sandbox allow-downloads allow-top-navigation-by-user-activation" allow="
-          accelerometer;
-          autoplay;
-          camera;
-          encrypted-media;
-          fullscreen;
-          geolocation;
-          gyroscope;
-          microphone;
-          midi;
-          clipboard-read;
-          clipboard-write;
-          usb;
-          vr;
-          xr-spatial-tracking;
-          screen-wake-lock;
-          magnetometer;
-          ambient-light-sensor;
-          battery;
-          gamepad;
-          picture-in-picture;
-          display-capture;
-          bluetooth;
-        " referrerpolicy="origin-when-cross-origin"></iframe>
+  <!-- لوحة العمل بعد تسجيل الدخول -->
+  <div id="dashboardView" class="d-none">
+    <div class="card-custom p-3 mb-4 d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-2 flex-wrap">
+        <h5 class="fw-bold mb-0" id="empHeaderName"></h5>
+        <span class="badge bg-secondary" id="empHeaderId"></span>
+        <span class="badge bg-info text-dark" id="empHeaderDept"></span>
+        <span class="badge bg-success" id="roleBadge"></span>
+      </div>
+      <button class="btn btn-outline-danger btn-sm rounded-pill px-3 fw-bold" onclick="logout()">
+        <i class="fa-solid fa-power-off me-1"></i> خروج
+      </button>
     </div>
 
-    <script type="text/javascript" crossorigin="anonymous" src="./PDCG Digital Hub – Al Buraimi Hospital _ مستشفى البريمي_files/surveys.js.download"></script><script type="text/javascript" crossorigin="anonymous" src="./PDCG Digital Hub – Al Buraimi Hospital _ مستشفى البريمي_files/dead-clicks-autocapture.js.download"></script><script type="text/javascript" crossorigin="anonymous" src="./PDCG Digital Hub – Al Buraimi Hospital _ مستشفى البريمي_files/exception-autocapture.js.download"></script><script type="text/javascript" crossorigin="anonymous" src="./PDCG Digital Hub – Al Buraimi Hospital _ مستشفى البريمي_files/web-vitals-with-attribution.js.download"></script><script>
-      const iframe = document.getElementById("preview-iframe");
-      iframe.addEventListener("load", () => iframe.focus());
+    <div class="d-flex flex-wrap gap-2 mb-4">
+      <button id="tabRooms" class="nav-pill-custom active" onclick="switchTab('rooms')"><i class="fa-solid fa-door-open me-1"></i> حجز القاعات والمحاكاة</button>
+      <button id="tabEvents" class="nav-pill-custom" onclick="switchTab('events')"><i class="fa-solid fa-calendar-days me-1"></i> إدارة الفعاليات المجدولة (OMSB + الشهادات)</button>
+      <button id="tabCoaching" class="nav-pill-custom" onclick="switchTab('coaching')"><i class="fa-solid fa-seedling me-1"></i> التمكين الشخصي (Coaching)</button>
+      <button id="tabCoachAdmin" class="nav-pill-custom d-none" onclick="switchTab('coachAdmin')"><i class="fa-solid fa-clipboard-check me-1"></i> اعتماد جلسات التمكين <span id="coachPendingBadge" class="badge bg-danger ms-1">0</span></button>
+    </div>
 
-      document.addEventListener("DOMContentLoaded", () => {
-        if (!hasStorageKey("code_reported") || !hasStorageKey("survey_completed")) {
-          document.querySelector(".report-content-btn").style.display = "block";
-        }
-      });
+    <!-- تبويب حجز القاعات -->
+    <div id="contentRooms">
+      <div class="card-custom p-4">
+        <h5 class="fw-bold text-primary mb-3"><i class="fa-solid fa-door-open me-2"></i> حجز قاعة تدريبية (أيام متعددة + تقويم Google)</h5>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label class="lbl">القاعة المطلوبة *</label>
+            <select id="bookRoom" class="form-select form-control-custom">
+              <option value="قاعة المحاضرات الصغرى (IT سابقا)">قاعة المحاضرات الصغرى (IT سابقاً)</option>
+              <option value="قاعة الاجتماعات (الدور الاول)">قاعة الاجتماعات (الدور الأول)</option>
+              <option value="قاعة قسم التطوير والتوجيه المهني 1">قاعة قسم التطوير والتوجيه المهني 1</option>
+              <option value="قاعة قسم التطوير والتوجيه المهني 2">قاعة قسم التطوير والتوجيه المهني 2</option>
+            </select>
+          </div>
+          <div class="col-md-4"><label class="lbl">عنوان البرنامج / النشاط *</label><input type="text" id="bookPurpose" class="form-control form-control-custom" placeholder="مثال: ورشة الإنعاش القلبي"></div>
+          <div class="col-md-2"><label class="lbl">الوقت من *</label><input type="time" id="bookStart" class="form-control form-control-custom" value="08:00"></div>
+          <div class="col-md-2"><label class="lbl">الوقت إلى *</label><input type="time" id="bookEnd" class="form-control form-control-custom" value="10:00"></div>
+          <div class="col-md-6">
+            <label class="lbl">إضافة أيام الحجز (الأحد – الخميس فقط) *</label>
+            <div class="input-group">
+              <input type="date" id="bookDatePicker" class="form-control form-control-custom">
+              <button class="btn btn-dark fw-bold" type="button" onclick="addBookingDate()">+ إضافة يوم</button>
+            </div>
+          </div>
+          <div class="col-md-6"><label class="lbl">الأيام المختارة:</label><div id="selectedDatesBox" class="p-2 border rounded-3 bg-light">لا توجد أيام مختارة بعد</div></div>
+          <div class="col-12">
+            <button class="btn btn-success px-4 py-2 rounded-pill fw-bold" onclick="submitRoomBooking()"><i class="fa-solid fa-calendar-check me-1"></i> تثبيت الحجز والمزامنة بالتقويم</button>
+            <div id="bookAlert" class="mt-3 d-none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      function onCodePreviewBannerCTAClicked(event) {
-        posthog?.capture?.("code_preview_banner_cta_clicked");
+    <!-- تبويب إدارة الفعاليات -->
+    <div id="contentEvents" class="d-none">
+      <div class="card-custom p-4">
+        <h5 class="fw-bold text-primary mb-3"><i class="fa-solid fa-calendar-plus me-2"></i> إضافة وجدولة فعالية تدريبية</h5>
+        <div class="row g-3">
+          <div class="col-md-6"><label class="lbl">عنوان الفعالية باللغة العربية *</label><input type="text" id="evTitleAr" class="form-control form-control-custom"></div>
+          <div class="col-md-6"><label class="lbl">عنوان الفعالية باللغة الإنجليزية *</label><input type="text" id="evTitleEn" class="form-control form-control-custom"></div>
+          <div class="col-md-3"><label class="lbl">التاريخ من *</label><input type="date" id="evFrom" class="form-control form-control-custom"></div>
+          <div class="col-md-3"><label class="lbl">التاريخ إلى *</label><input type="date" id="evTo" class="form-control form-control-custom"></div>
+          <div class="col-md-3"><label class="lbl">الوقت من *</label><input type="time" id="evTimeFrom" class="form-control form-control-custom" value="08:00"></div>
+          <div class="col-md-3"><label class="lbl">الوقت إلى *</label><input type="time" id="evTimeTo" class="form-control form-control-custom" value="13:00"></div>
+          <div class="col-md-4">
+            <label class="lbl">القاعة *</label>
+            <select id="evRoom" class="form-select form-control-custom">
+              <option value="قاعة المحاضرات الصغرى (IT سابقا)">قاعة المحاضرات الصغرى (IT سابقاً)</option>
+              <option value="قاعة الاجتماعات (الدور الاول)">قاعة الاجتماعات (الدور الأول)</option>
+              <option value="قاعة قسم التطوير والتوجيه المهني 1">قاعة قسم التطوير والتوجيه المهني 1</option>
+              <option value="قاعة قسم التطوير والتوجيه المهني 2">قاعة قسم التطوير والتوجيه المهني 2</option>
+            </select>
+          </div>
+          <div class="col-md-4"><label class="lbl">الفئة المستهدفة *</label><input type="text" id="evAud" class="form-control form-control-custom" placeholder="الأطباء والتمريض"></div>
+          <div class="col-md-4"><label class="lbl">الحد الأقصى للمشاركين *</label><input type="number" id="evCap" class="form-control form-control-custom" value="30"></div>
+          <div class="col-12">
+            <div class="p-3 bg-light rounded-3 border">
+              <div class="form-check fw-bold">
+                <input class="form-check-input" type="checkbox" id="evOmsbCheck" onchange="document.getElementById('omsbFields').classList.toggle('d-none', !this.checked)">
+                <label class="form-check-label" for="evOmsbCheck">الفعالية معتمدة من المجلس العماني للاختصاصات الطبية (OMSB Accredited)</label>
+              </div>
+              <div id="omsbFields" class="row g-3 mt-1 d-none">
+                <div class="col-md-6"><label class="lbl">رقم / كود اعتماد OMSB *</label><input type="text" id="evOmsbCode" class="form-control form-control-custom" placeholder="OMSB-2026-XXXX"></div>
+                <div class="col-md-6"><label class="lbl">عدد الساعات / النقاط المعتمدة (CPD Credits) *</label><input type="number" step="0.5" id="evCredits" class="form-control form-control-custom" placeholder="6"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="p-3 bg-success-subtle rounded-3 border border-success">
+              <div class="form-check fw-bold text-success-emphasis">
+                <input class="form-check-input" type="checkbox" id="evCertCheck" checked>
+                <label class="form-check-label" for="evCertCheck">إصدار شهادة رقمية تلقائية في نهاية اليوم الأخير للفعالية (الساعة 14:00)</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary px-4 py-2 rounded-pill fw-bold" onclick="submitEvent()"><i class="fa-solid fa-check-circle me-1"></i> اعتماد ونشر الفعالية</button>
+            <div id="evAlert" class="mt-3 d-none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- تبويب التمكين الشخصي -->
+    <div id="contentCoaching" class="d-none">
+      <div class="card-custom p-4">
+        <h5 class="fw-bold text-success mb-3"><i class="fa-solid fa-seedling me-2"></i> طلب جلسة تمكين وتوجيه مهني (45 دقيقة - سرية تامة)</h5>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <label class="lbl">مجال الجلسة *</label>
+            <select id="coachFocus" class="form-select form-control-custom">
+              <option value="career">التطوير والتخطيط المهني المستقبلي</option>
+              <option value="leadership">تطوير المهارات القيادية والإشرافية</option>
+              <option value="stress">إدارة ضغوط العمل والتوازن المهني</option>
+              <option value="challenges">حل التحديات الوظيفية والتواصل الفعال</option>
+              <option value="other">أخرى</option>
+            </select>
+          </div>
+          <div class="col-md-4"><label class="lbl">التاريخ المقترح *</label><input type="date" id="coachDate" class="form-control form-control-custom"></div>
+          <div class="col-md-4"><label class="lbl">التوقيت *</label><input type="time" id="coachSlot" class="form-control form-control-custom" value="09:30"></div>
+          <div class="col-md-4">
+            <label class="lbl">طريقة الحضور *</label>
+            <select id="coachMode" class="form-select form-control-custom"><option value="حضوري بمكتب القسم">حضوري بمكتب قسم PDCG</option><option value="عن بُعد (Google Meet)">عن بُعد (Google Meet)</option></select>
+          </div>
+          <div class="col-md-4"><label class="lbl">البريد الإلكتروني للتأكيد *</label><input type="email" id="coachEmail" class="form-control form-control-custom"></div>
+          <div class="col-md-4"><label class="lbl">الهدف من الجلسة (سري)</label><input type="text" id="coachGoal" class="form-control form-control-custom"></div>
+          <div class="col-12">
+            <button class="btn btn-success px-4 py-2 rounded-pill fw-bold" onclick="submitCoaching()"><i class="fa-solid fa-paper-plane me-1"></i> إرسال طلب الجلسة</button>
+            <div id="coachAlert" class="mt-3 d-none"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- تبويب اعتماد جلسات التمكين للمدير -->
+    <div id="contentCoachAdmin" class="d-none">
+      <div class="card-custom p-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="fw-bold text-primary mb-0">طلبات جلسات التمكين الواردة</h5>
+          <button class="btn btn-sm btn-outline-primary rounded-pill" onclick="loadCoachingAdmin()">تحديث</button>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-hover align-middle">
+            <thead class="table-light"><tr><th>الموظف</th><th>القسم</th><th>المجال</th><th>الموعد</th><th>الحالة</th><th>الإجراء</th></tr></thead>
+            <tbody id="coachAdminBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // ضع هنا رابط تطبيق الويب الخاص بك في Google Apps Script المنتهي بـ /exec
+  const API_URL = "ضع_هنا_رابط_exec_الخاص_بك";
+
+  let sessionState = { access: null, refresh: null, user: null, selectedDates: [] };
+
+  async function apiCall(action, payload = {}, useAuth = false) {
+    const body = { action: action, payload: payload };
+    if (useAuth && sessionState.access) body.token = sessionState.access;
+    const res = await fetch(API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(body)
+    });
+    return await res.json();
+  }
+
+  window.onload = async function() {
+    const badge = document.getElementById('connBadge');
+    try {
+      const pingRes = await apiCall('ping', {}, false);
+      if (pingRes && pingRes.ok) {
+        badge.className = 'badge bg-success px-3 py-2 rounded-pill';
+        badge.innerText = '✓ متصل - بيانات حقيقية';
+      } else {
+        badge.className = 'badge bg-danger px-3 py-2 rounded-pill';
+        badge.innerText = 'تعذر الاتصال بالخادم';
       }
-
-      function reportContent(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        if (!posthog || !posthog.capture || !posthog.setPersonProperties || !posthog.displaySurvey) return;
-
-        if (!hasStorageKey("survey_completed")) {
-          posthog.setPersonProperties?.({
-            last_reported_message_id: MESSAGE_ID,
-            last_report_timestamp: Date.now(),
-          });
-          posthog.displaySurvey?.(REPORT_SURVEY_ID, {
-            ignoreConditions: true,
-            ignoreDelay: true,
-          });
-        }
+      const res = await apiCall('listEvents', {}, false);
+      const box = document.getElementById('publicEventsList');
+      if (res.ok && res.events && res.events.length) {
+        box.innerHTML = res.events.slice(0, 5).map(e =>
+          `<div class="p-2 mb-2 border rounded bg-light"><strong class="text-dark d-block">${e['العنوان بالعربي'] || ''}</strong><span>${String(e['التاريخ من'] || '').slice(0, 10)} • ${e['القاعة'] || ''}</span></div>`
+        ).join('');
+      } else {
+        box.innerText = 'لا توجد فعاليات منشورة حالياً.';
       }
+    } catch (e) {
+      badge.className = 'badge bg-danger px-3 py-2 rounded-pill';
+      badge.innerText = 'يرجى ضبط رابط /exec في الكود';
+    }
+  };
 
-      function dismissBanner(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        posthog?.capture?.("code_preview_banner_dismiss");
-
-        const banner = document.getElementById("floating-banner");
-        banner.classList.add("dismissed");
-        setTimeout(() => banner.remove(), 300);
+  async function handleLogin() {
+    const jobId = document.getElementById('jobIdInput').value.trim();
+    const password = document.getElementById('passwordInput').value;
+    const alertBox = document.getElementById('loginAlert');
+    const btn = document.getElementById('loginBtn');
+    alertBox.classList.add('d-none');
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> جاري التحقق...';
+    try {
+      const res = await apiCall('login', { jobId, password }, false);
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fa-solid fa-right-to-bracket me-1"></i> تسجيل الدخول';
+      if (!res.ok) {
+        alertBox.innerText = res.code === 'LOCKED' ? 'الحساب مقفل مؤقتاً (5 دقائق).' : 'بيانات الدخول غير صحيحة.';
+        alertBox.classList.remove('d-none');
+        return;
       }
-    </script>
-  <script type="module" src="./PDCG Digital Hub – Al Buraimi Hospital _ مستشفى البريمي_files/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;cfb6543e268d4ceb92c8170675caa481&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+      sessionState.access = res.tokens.access;
+      sessionState.refresh = res.tokens.refresh;
+      sessionState.user = res.user;
+      document.getElementById('landingView').classList.add('d-none');
+      document.getElementById('dashboardView').classList.remove('d-none');
+      document.getElementById('empHeaderName').innerText = res.user.ar || res.user.en;
+      document.getElementById('empHeaderId').innerText = 'الرقم: ' + res.user.id;
+      document.getElementById('empHeaderDept').innerText = 'القسم: ' + (res.user.dept || 'PDCG');
+      document.getElementById('roleBadge').innerText = res.user.role;
+      if (res.user.email) document.getElementById('coachEmail').value = res.user.email;
+      if (res.user.role === 'admin' || res.user.role === 'coordinator') {
+        document.getElementById('tabCoachAdmin').classList.remove('d-none');
+        loadCoachingAdmin();
+      }
+    } catch (err) {
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fa-solid fa-right-to-bracket me-1"></i> تسجيل الدخول';
+      alertBox.innerText = 'خطأ في الاتصال بالخادم.';
+      alertBox.classList.remove('d-none');
+    }
+  }
 
+  async function handleRegister() {
+    const payload = {
+      jobId: document.getElementById('regJobId').value.trim(),
+      nameAr: document.getElementById('regNameAr').value.trim(),
+      nameEn: document.getElementById('regNameEn').value.trim(),
+      workplace: document.getElementById('regWorkplace').value,
+      dept: document.getElementById('regDept').value.trim(),
+      phone: document.getElementById('regPhone').value.trim(),
+      email: document.getElementById('regEmail').value.trim(),
+      password: document.getElementById('regPass').value
+    };
+    const res = await apiCall('registerStaff', payload, false);
+    if (res.ok) alert('تم التسجيل بنجاح في ورقة: ' + res.sheet + '. يمكنك تسجيل الدخول الآن.');
+    else alert('تعذر التسجيل: ' + (res.code || 'تحقق من البيانات'));
+  }
 
-</body></html>
+  async function submitTraineeApp() {
+    const alertBox = document.getElementById('trAlert');
+    const payload = {
+      track: document.getElementById('trTrack').value,
+      name: document.getElementById('trName').value.trim(),
+      civil: document.getElementById('trCivil').value.trim(),
+      nat: document.getElementById('trNat').value,
+      institution: document.getElementById('trInst').value.trim(),
+      spec: document.getElementById('trSpec').value.trim(),
+      dept: document.getElementById('trDept').value.trim(),
+      start: document.getElementById('trStart').value,
+      end: document.getElementById('trEnd').value,
+      phone: document.getElementById('trPhone').value.trim(),
+      email: document.getElementById('trEmail').value.trim(),
+      reqType: 'uni'
+    };
+    const res = await apiCall('submitApplication', payload, false);
+    alertBox.classList.remove('d-none');
+    if (res.ok) {
+      alertBox.className = 'alert alert-success mt-3 fw-bold';
+      alertBox.innerText = 'تم استلام طلبك بنجاح! رمز التتبع الخاص بك: ' + res.code;
+    } else {
+      alertBox.className = 'alert alert-danger mt-3';
+      alertBox.innerText = 'يرجى التحقق من جميع الحقول المطلوبة.';
+    }
+  }
+
+  async function handleTrack() {
+    const code = document.getElementById('trackCodeInput').value.trim();
+    const civil = document.getElementById('trackCivilInput').value.trim();
+    const box = document.getElementById('trackResult');
+    box.classList.remove('d-none');
+    const res = await apiCall('trackApplication', { code, civil }, false);
+    if (!res.ok) {
+      box.innerHTML = '<div class="alert alert-danger py-2 small">لم يتم العثور على طلب مطابق.</div>';
+      return;
+    }
+    const a = res.app;
+    box.innerHTML = `<div class="alert alert-success py-2 small mb-0"><strong>الاسم:</strong> ${a.name}<br><strong>القسم:</strong> ${a.dept} | <strong>الحالة:</strong> ${a.status}<br><strong>الفترة:</strong> ${a.start} إلى ${a.end}</div>`;
+  }
+
+  function switchTab(tab) {
+    ['rooms', 'events', 'coaching', 'coachAdmin'].forEach(t => {
+      const cap = t.charAt(0).toUpperCase() + t.slice(1);
+      const c = document.getElementById('content' + cap), b = document.getElementById('tab' + cap);
+      if (c) c.classList.add('d-none');
+      if (b) b.classList.remove('active');
+    });
+    const capActive = tab.charAt(0).toUpperCase() + tab.slice(1);
+    document.getElementById('content' + capActive).classList.remove('d-none');
+    document.getElementById('tab' + capActive).classList.add('active');
+  }
+
+  function addBookingDate() {
+    const val = document.getElementById('bookDatePicker').value;
+    if (!val) return;
+    if (!sessionState.selectedDates.includes(val)) {
+      sessionState.selectedDates.push(val);
+      renderSelectedDates();
+    }
+  }
+  function removeBookingDate(d) {
+    sessionState.selectedDates = sessionState.selectedDates.filter(x => x !== d);
+    renderSelectedDates();
+  }
+  function renderSelectedDates() {
+    const box = document.getElementById('selectedDatesBox');
+    box.innerHTML = sessionState.selectedDates.length ? sessionState.selectedDates.map(d => `<span class="date-chip">${d} <i class="fa-solid fa-xmark" style="cursor:pointer" onclick="removeBookingDate('${d}')"></i></span>`).join('') : 'لا توجد أيام مختارة بعد';
+  }
+
+  async function submitRoomBooking() {
+    const alertBox = document.getElementById('bookAlert');
+    const payload = {
+      room: document.getElementById('bookRoom').value,
+      purpose: document.getElementById('bookPurpose').value.trim(),
+      s: document.getElementById('bookStart').value,
+      e: document.getElementById('bookEnd').value,
+      selectedDates: sessionState.selectedDates
+    };
+    alertBox.className = 'alert alert-info mt-3';
+    alertBox.innerText = 'جاري فحص الشواغر والتوثيق بالتقويم...';
+    const res = await apiCall('createBooking', payload, true);
+    if (res.ok) {
+      alertBox.className = 'alert alert-success mt-3 fw-bold';
+      alertBox.innerText = 'تم تأكيد الحجز ومزامنته مع تقويم Google بنجاح (' + res.created.length + ' أيام).';
+      sessionState.selectedDates = [];
+      renderSelectedDates();
+    } else {
+      alertBox.className = 'alert alert-danger mt-3';
+      alertBox.innerText = res.message || ('تعذر الحجز: ' + res.code);
+    }
+  }
+
+  async function submitEvent() {
+    const alertBox = document.getElementById('evAlert');
+    const omsbChecked = document.getElementById('evOmsbCheck').checked;
+    const payload = {
+      action: 'add',
+      titleAr: document.getElementById('evTitleAr').value.trim(),
+      titleEn: document.getElementById('evTitleEn').value.trim(),
+      eventDateFrom: document.getElementById('evFrom').value,
+      eventDateTo: document.getElementById('evTo').value,
+      timeFrom: document.getElementById('evTimeFrom').value,
+      timeTo: document.getElementById('evTimeTo').value,
+      room: document.getElementById('evRoom').value,
+      aud: document.getElementById('evAud').value.trim(),
+      cap: Number(document.getElementById('evCap').value || 30),
+      dept: sessionState.user.dept || 'PDCG',
+      omsbCode: omsbChecked ? document.getElementById('evOmsbCode').value.trim() : '',
+      credits: omsbChecked ? Number(document.getElementById('evCredits').value || 0) : 0,
+      cert: document.getElementById('evCertCheck').checked
+    };
+    alertBox.className = 'alert alert-info mt-3';
+    alertBox.innerText = 'جاري فحص التواريخ ونشر الفعالية...';
+    const res = await apiCall('manageEvent', payload, true);
+    if (res.ok) {
+      alertBox.className = 'alert alert-success mt-3 fw-bold';
+      alertBox.innerText = 'تم اعتماد الفعالية وحجز القاعة بالتقويم بنجاح!';
+    } else {
+      alertBox.className = 'alert alert-danger mt-3';
+      alertBox.innerText = res.message || ('خطأ: ' + res.code);
+    }
+  }
+
+  async function submitCoaching() {
+    const alertBox = document.getElementById('coachAlert');
+    const payload = {
+      nameAr: sessionState.user.ar || sessionState.user.en,
+      dept: sessionState.user.dept || 'PDCG',
+      focus: document.getElementById('coachFocus').value,
+      date: document.getElementById('coachDate').value,
+      slot: document.getElementById('coachSlot').value,
+      mode: document.getElementById('coachMode').value,
+      email: document.getElementById('coachEmail').value.trim(),
+      goal: document.getElementById('coachGoal').value.trim()
+    };
+    alertBox.className = 'alert alert-info mt-3';
+    alertBox.innerText = 'جاري إرسال الطلب...';
+    const res = await apiCall('requestCoaching', payload, true);
+    if (res.ok) {
+      alertBox.className = 'alert alert-success mt-3 fw-bold';
+      alertBox.innerText = 'تم إرسال طلب جلسة التمكين بنجاح (قيد الانتظار).';
+    } else {
+      alertBox.className = 'alert alert-danger mt-3';
+      alertBox.innerText = 'تعذر إرسال الطلب: ' + res.code;
+    }
+  }
+
+  async function loadCoachingAdmin() {
+    const res = await apiCall('listCoachingAdmin', {}, true);
+    if (!res.ok) return;
+    document.getElementById('coachPendingBadge').innerText = res.pending || 0;
+    const tbody = document.getElementById('coachAdminBody');
+    tbody.innerHTML = (res.rows || []).map(r => `
+      <tr>
+        <td class="fw-bold">${r['الموظف']} (${r['الرقم الوظيفي']})</td>
+        <td>${r['القسم']}</td>
+        <td>${r['المجال']}</td>
+        <td>${String(r['التاريخ']).slice(0, 10)} - ${r['التوقيت']}</td>
+        <td><span class="badge ${r['الحالة'] === 'قيد الانتظار' ? 'bg-warning text-dark' : r['الحالة'] === 'معتمد ومؤكد' ? 'bg-success' : 'bg-danger'}">${r['الحالة']}</span></td>
+        <td>${r['الحالة'] === 'قيد الانتظار' ? `<button class="btn btn-sm btn-success" onclick="decideCoaching('${r['الرقم']}', true)">اعتماد</button> <button class="btn btn-sm btn-outline-danger" onclick="decideCoaching('${r['الرقم']}', false)">رفض</button>` : '-'}</td>
+      </tr>
+    `).join('');
+  }
+
+  async function decideCoaching(reqId, approve) {
+    const reason = approve ? '' : (prompt('اذكر سبب الرفض:') || '-');
+    const res = await apiCall(approve ? 'approveCoaching' : 'rejectCoaching', { reqId, reason }, true);
+    if (res.ok) loadCoachingAdmin();
+  }
+
+  function logout() {
+    sessionState = { access: null, refresh: null, user: null, selectedDates: [] };
+    document.getElementById('dashboardView').classList.add('d-none');
+    document.getElementById('landingView').classList.remove('d-none');
+  }
+</script>
+</body>
+</html>
